@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_marginStart="@dimen/activity_padding_small"
+        android:layout_marginTop="@dimen/activity_padding_small"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+    android:id="@+id/ivProduct"
+    android:src="@drawable/back1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+    android:id="@+id/tvName"
+       app:layout_constraintStart_toEndOf="@+id/ivProduct"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="@dimen/activity_padding_small"
+       android:layout_marginStart="@dimen/activity_horizontal_margin"
+       android:text="Dummy Product Title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/tvPrice"
+    app:layout_constraintTop_toBottomOf="@+id/tvName"
+    app:layout_constraintStart_toEndOf="@+id/ivProduct"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:text="Rs.1200.00"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
